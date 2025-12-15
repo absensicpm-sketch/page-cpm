@@ -24,18 +24,24 @@
             max-width: 500px;
             width: 90%;
         }
-        .logo {
-            /* MENGGUNAKAN NILAI YANG LEBIH BESAR UNTUK LOGO */
-            width: 800px; 
-            max-width: 100%; /* Maksimum 80% dari lebar container, agar responsif di HP */
+       .logo {
+            /* Nilai yang sudah diperbaiki */
+            width: 300px; /* Ukuran yang cukup besar di desktop */
+            max-width: 90%; /* MEMASTIKAN tidak lebih besar dari 90% lebar container di HP */
             height: auto;
             margin-bottom: 10px;
         }
-        }
-        h1 {
+
+       h1 {
             color: #333;
-            margin-top: 5px;
+            margin-top: 5px; 
             margin-bottom: 10px;
+            
+            /* -- TAMBAHAN UNTUK MENCEGAH PECAH BARIS DI HP -- */
+            white-space: nowrap; /* Memaksa teks tetap satu baris */
+            overflow: hidden;    /* Menyembunyikan jika melebihi batas (opsional) */
+            text-overflow: ellipsis; /* Menampilkan elipsis jika terpotong (opsional) */
+            /* ----------------------------------------------- */
         }
         p {
             color: #666;
@@ -78,6 +84,7 @@
 </body>
 
 </html>
+
 
 
 
