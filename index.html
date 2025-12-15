@@ -4,68 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selamat Datang di Perusahaan Kami</title>
-    <style>
+<style>
         body {
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4; /* Warna latar belakang */
+            background-color: #f4f4f4;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* Tinggi layar penuh */
+            min-height: 100vh; /* Gunakan min-height */
             text-align: center;
         }
-   .container {
+        .container {
             background: white;
-            padding: 40px; /* Nilai padding lama (40px di semua sisi) */
+            /* Padding diset seimbang */
+            padding: 30px; 
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             max-width: 500px;
             width: 90%;
-
-            /* -- PERUBAHAN UNTUK SPACING SERASI -- */
-            padding: 30px; /* Mengurangi padding secara keseluruhan */
-            padding-bottom: 40px; /* Menambah sedikit padding di bawah tombol */
-            /* ------------------------------------ */
+            /* Margin atas dan bawah agar ada ruang napas */
+            margin: 5vh auto; 
         }
-       .logo {
-            /* Nilai yang sudah diperbaiki */
-            width: 300px; /* Ukuran yang cukup besar di desktop */
-            max-width: 90%; /* MEMASTIKAN tidak lebih besar dari 90% lebar container di HP */
+        .logo {
+            /* Ukuran besar tapi aman di HP */
+            width: 300px; 
+            max-width: 90%; /* Selalu menyesuaikan 90% lebar container */
             height: auto;
-            margin-bottom: 10px;
+            margin-bottom: 1.5em; /* Jarak antara logo & H1 */
         }
-
-       h1 {
+        h1 {
             color: #333;
-            margin-top: 5px; 
-            margin-bottom: 10px;
-            
-            /* -- TAMBAHAN UNTUK MENCEGAH PECAH BARIS DI HP -- */
-            white-space: nowrap; /* Memaksa teks tetap satu baris */
-            overflow: hidden;    /* Menyembunyikan jika melebihi batas (opsional) */
-            text-overflow: ellipsis; /* Menampilkan elipsis jika terpotong (opsional) */
-            /* ----------------------------------------------- */
+            font-size: 1.8em; /* Ukuran font besar yang responsif */
+            line-height: 1.2;
+            margin-top: 0; /* Menghilangkan margin atas agar rapat dengan logo */
+            margin-bottom: 0.5em; /* Jarak antara H1 & Paragraf */
+            /* Pastikan teks boleh pecah baris lagi */
+            white-space: normal; 
         }
         p {
             color: #666;
-            line-height: 1.6;
+            line-height: 1.5;
+            margin-bottom: 2em; /* Jarak antara Paragraf & Tombol */
+            padding: 0 10px; /* Sedikit padding agar teks tidak terlalu lebar */
         }
         .btn {
-            display: block; /* Diubah: Agar bisa mengatur lebar tombol */
-            margin: 20px auto 0 auto; /* Diubah: Agar tombol berada di tengah (center) */
-            padding: 12px 25px; /* (Opsional, dari Opsi 1) */
-            
-            /* DITAMBAHKAN: Aturan lebar */
-            width: 80%; /* Lebar tombol 80% dari kotak putih (.container) */
-            max-width: 250px; /* Tapi tidak akan lebih lebar dari 250px (agar tidak terlalu besar di desktop) */
-            
+            display: inline-block;
+            padding: 12px 30px; /* Ukuran tombol lebih besar */
             background-color: #007bff;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 8px;
             font-weight: bold;
+            font-size: 1.1em;
         }
         .btn:hover {
             background-color: #0056b3;
@@ -89,6 +81,7 @@
 </body>
 
 </html>
+
 
 
 
