@@ -29,11 +29,12 @@
             width: 800px; 
             max-width: 100%; /* Maksimum 80% dari lebar container, agar responsif di HP */
             height: auto;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         }
         h1 {
             color: #333;
+            margin-top: 5px;
             margin-bottom: 10px;
         }
         p {
@@ -41,9 +42,14 @@
             line-height: 1.6;
         }
         .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
+            display: block; /* Diubah: Agar bisa mengatur lebar tombol */
+            margin: 20px auto 0 auto; /* Diubah: Agar tombol berada di tengah (center) */
+            padding: 12px 25px; /* (Opsional, dari Opsi 1) */
+            
+            /* DITAMBAHKAN: Aturan lebar */
+            width: 80%; /* Lebar tombol 80% dari kotak putih (.container) */
+            max-width: 250px; /* Tapi tidak akan lebih lebar dari 250px (agar tidak terlalu besar di desktop) */
+            
             background-color: #007bff;
             color: white;
             text-decoration: none;
@@ -72,6 +78,7 @@
 </body>
 
 </html>
+
 
 
 
